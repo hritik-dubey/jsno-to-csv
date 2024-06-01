@@ -37,6 +37,23 @@ function convertJsonToCsv(jsonData, csvFilePath) {
 //         .catch(error => console.error('Error writing CSV file:', error));
 // }
 
+// function convertJsonToCsv(jsonData, csvFilePath) {
+//     // Extract header from the first object in the JSON array and remove numeric values
+//     const header = jsonData[0].filter(field => isNaN(field));
+
+//     // Create CSV writer with specified header and file path
+//     const csvWriter = createCsvWriter({
+//         path: csvFilePath,
+//         header: header.map(key => ({ id: key, title: key })),
+//     });
+
+//     // Write the JSON data to CSV file, skipping the first row
+//     csvWriter
+//         .writeRecords(jsonData.slice(1))
+//         .then(() => console.log('CSV file written successfully'))
+//         .catch(error => console.error('Error writing CSV file:', error));
+// }
+
 // Example usage:
 const jsonData = [
     [
