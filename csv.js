@@ -18,7 +18,6 @@ function convertJsonToCsv(jsonData, csvFilePath) {
         .catch((error) => console.error('Error writing CSV file:', error));
 }
 
-// Example usage:
 const jsonData = [
     [
         "p_id",
